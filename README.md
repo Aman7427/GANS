@@ -36,6 +36,20 @@ We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 - **Metrics**: Frechet Inception Distance (FID), Inception Score (IS)
 
 ---
+## Requirements
+- Python 3.8+
+
+- PyTorch (with CUDA support)
+
+- NVIDIA GPU with CUDA drivers installed
+
+- Optional: Weights & Biases (for visualization)
+
+# Note:
+This project requires a GPU to train efficiently. The training loop uses matrix operations and backpropagation over deep neural networks which are computationally expensive.
+Running on CPU may cause extremely slow training or may fail due to memory constraints.
+
+---
 
 ## Model Architecture
 
