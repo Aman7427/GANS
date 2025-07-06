@@ -1,10 +1,7 @@
 # Conditional GANs with WGAN-GP  
 *CSL7590: Deep Learning | Spring 2024 | IIT Jodhpur*
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/Conditional-GAN-WGAN-GP)
-![License](https://img.shields.io/github/license/yourusername/Conditional-GAN-WGAN-GP)
-
-## 📌 Overview
+## Overview
 
 This repository contains the implementation of a **Conditional GAN (CGAN)** trained on the **ISIC 2016 dataset**, enhanced with **Wasserstein GAN with Gradient Penalty (WGAN-GP)** to stabilize training and avoid mode collapse.
 
@@ -12,7 +9,7 @@ The project focuses on generating realistic images from sketches by conditioning
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 - **Training Images**: 9015
@@ -22,7 +19,7 @@ We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
 - **Objective**: Generate realistic images from paired/unpaired sketches using a conditional setup.
 - **Training Strategy**: WGAN-GP to enforce Lipschitz continuity via gradient penalty.
@@ -31,7 +28,7 @@ We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 
 ---
 
-## ⚙️ Experimental Setup
+## Experimental Setup
 
 - **Image Size**: 64 × 64
 - **Optimizer**: Adam
@@ -40,7 +37,7 @@ We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 
 ---
 
-## 🏗 Model Architecture
+## Model Architecture
 
 ### Generator
 - Input: Sketch + Label (embedded)
@@ -52,7 +49,7 @@ We used the **ISIC 2016 Skin Lesion Dataset** comprising:
 
 ---
 
-## 🔁 Training Details
+## Training Details
 
 | Hyperparameter | Value       |
 |----------------|-------------|
@@ -69,7 +66,7 @@ L = \mathbb{E}_{\tilde{x} \sim P_g}[D(\tilde{x})] - \mathbb{E}_{x \sim P_r}[D(x)
 
 ---
 
-## 📊 Results
+## Results
 
 ### Image Generation
 
@@ -95,7 +92,7 @@ L = \mathbb{E}_{\tilde{x} \sim P_g}[D(\tilde{x})] - \mathbb{E}_{x \sim P_r}[D(x)
 
 ---
 
-## 🔍 Analysis
+## Analysis
 
 - WGAN-GP significantly improves training stability over traditional GANs.
 - Better performance observed on paired sketches vs. unpaired.
@@ -103,7 +100,7 @@ L = \mathbb{E}_{\tilde{x} \sim P_g}[D(\tilde{x})] - \mathbb{E}_{x \sim P_r}[D(x)
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 - CGANs allow conditional control over generated samples.
 - WGAN-GP helps mitigate non-convergence and mode collapse.
@@ -114,7 +111,7 @@ L = \mathbb{E}_{\tilde{x} \sim P_g}[D(\tilde{x})] - \mathbb{E}_{x \sim P_r}[D(x)
 
 ---
 
-## 📚 Resources
+## Resources
 
 - [Improved Training of Wasserstein GANs (WGAN-GP)](https://arxiv.org/abs/1704.00028)
 - [WGAN Original Paper](https://arxiv.org/abs/1701.07875)
@@ -122,7 +119,7 @@ L = \mathbb{E}_{\tilde{x} \sim P_g}[D(\tilde{x})] - \mathbb{E}_{x \sim P_r}[D(x)
 
 ---
 
-## 👨‍💻 Contributors
+## Contributors
 
 - **Sahil** (M21MA210)  
 - **Aman Kanshotia** (M21MA201)  
